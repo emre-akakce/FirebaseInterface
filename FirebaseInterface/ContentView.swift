@@ -9,15 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+           // Set the URL to your localhost (e.g., http://localhost:3000 if you're using a local web server)
+           WebView(url: URL(string: "http://localhost:3000/cep-telefonu.html")!)
+               .edgesIgnoringSafeArea(.all) // Make WebView full screen
+       }}
 
 #Preview {
     ContentView()
